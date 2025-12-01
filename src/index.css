@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+/* Estilos para gráficos */
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/* Estilos para cards de indicadores */
+.indicator-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.indicator-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Estilos para status de indicadores */
+.status-success {
+  color: #2e7d32;
+  background-color: #e8f5e8;
+}
+
+.status-warning {
+  color: #ed6c02;
+  background-color: #fff3e0;
+}
+
+.status-error {
+  color: #d32f2f;
+  background-color: #ffebee;
+}
+
+/* Animações */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .chart-container {
+    height: 250px;
+  }
+}
+
+/* Estilos para alertas */
+.alert-critical {
+  border-left: 4px solid #d32f2f;
+}
+
+.alert-warning {
+  border-left: 4px solid #ed6c02;
+}
+
+.alert-info {
+  border-left: 4px solid #1976d2;
+}
+
+/* Estilos para loading */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Estilos para tabelas */
+.data-grid-container {
+  height: 400px;
+  width: 100%;
+}
+
+/* Estilos customizados para Material-UI */
+.MuiDataGrid-root {
+  border: none;
+  border-radius: 8px;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Estilos para métricas */
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.metric-change {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.metric-change.positive {
+  color: #2e7d32;
+}
+
+.metric-change.negative {
+  color: #d32f2f;
+}
+
+.metric-change.neutral {
+  color: #666;
+}

@@ -1,0 +1,139 @@
+{
+  "indicadores": [
+    {
+      "id": 1,
+      "nome": "Cobertura da Estratégia Saúde da Família",
+      "valor": 96.88,
+      "meta": 95.0,
+      "unidade": "%",
+      "categoria": "epidemiologico",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "e-Gestor AB",
+      "descricao": "Percentual de cobertura populacional pela ESF",
+      "direcao_meta": "maior_melhor"
+    },
+    {
+      "id": 2,
+      "nome": "Cobertura Vacinal Infantil",
+      "valor": 87.5,
+      "meta": 95.0,
+      "unidade": "%",
+      "categoria": "epidemiologico",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "SIPNI",
+      "descricao": "Percentual de crianças vacinadas conforme calendário",
+      "direcao_meta": "maior_melhor"
+    },
+    {
+      "id": 3,
+      "nome": "Taxa de Mortalidade Infantil",
+      "valor": 12.3,
+      "meta": 10.0,
+      "unidade": "‰",
+      "categoria": "epidemiologico",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "SIM/SINASC",
+      "descricao": "Óbitos infantis por 1000 nascidos vivos",
+      "direcao_meta": "menor_melhor"
+    },
+    {
+      "id": 4,
+      "nome": "Consultas Pré-natal",
+      "valor": 2180.0,
+      "meta": 2500.0,
+      "unidade": "unidade",
+      "categoria": "producao",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "SISAB",
+      "descricao": "Número de consultas de pré-natal realizadas",
+      "direcao_meta": "maior_melhor"
+    },
+    {
+      "id": 5,
+      "nome": "Exames Preventivos Realizados",
+      "valor": 1650.0,
+      "meta": 1800.0,
+      "unidade": "unidade",
+      "categoria": "producao",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "SISAB",
+      "descricao": "Número de exames preventivos do câncer de colo uterino",
+      "direcao_meta": "maior_melhor"
+    },
+    {
+      "id": 6,
+      "nome": "Execução Orçamentária da Saúde",
+      "valor": 89.2,
+      "meta": 95.0,
+      "unidade": "%",
+      "categoria": "financeiro",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "SIOPS",
+      "descricao": "Percentual de execução do orçamento da saúde",
+      "direcao_meta": "maior_melhor"
+    },
+    {
+      "id": 7,
+      "nome": "Profissionais Capacitados",
+      "valor": 128.0,
+      "meta": 150.0,
+      "unidade": "unidade",
+      "categoria": "recursos_humanos",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "Sistema RH",
+      "descricao": "Número de profissionais que receberam capacitação",
+      "direcao_meta": "maior_melhor"
+    },
+    {
+      "id": 8,
+      "nome": "Atendimentos de Urgência",
+      "valor": 2950.0,
+      "meta": 3200.0,
+      "unidade": "unidade",
+      "categoria": "producao",
+      "ultimaAtualizacao": "2025-12-01",
+      "fonte": "SISAB",
+      "descricao": "Número de atendimentos de urgência realizados",
+      "direcao_meta": "maior_melhor"
+    }
+  ],
+  "alertas": [
+    {
+      "id": 1,
+      "indicador_id": 2,
+      "titulo": "Meta de Cobertura Vacinal não atingida",
+      "mensagem": "A cobertura vacinal infantil está em 87.5%, abaixo da meta de 95%. Necessário intensificar campanhas de vacinação.",
+      "nivel_criticidade": "alto",
+      "tipo": "meta_nao_atingida",
+      "data_referencia": "2025-12-01",
+      "resolvido": false
+    },
+    {
+      "id": 2,
+      "indicador_id": 3,
+      "titulo": "Taxa de Mortalidade Infantil acima da meta",
+      "mensagem": "A taxa de mortalidade infantil está em 12.3‰, acima da meta de 10‰. Requer atenção imediata.",
+      "nivel_criticidade": "critico",
+      "tipo": "valor_critico",
+      "data_referencia": "2025-12-01",
+      "resolvido": false
+    },
+    {
+      "id": 3,
+      "indicador_id": 4,
+      "titulo": "Consultas Pré-natal abaixo da meta",
+      "mensagem": "Número de consultas pré-natal (2.180) está abaixo da meta (2.500). Tendência negativa identificada.",
+      "nivel_criticidade": "medio",
+      "tipo": "tendencia_negativa",
+      "data_referencia": "2025-12-01",
+      "resolvido": false
+    }
+  ],
+  "metadados": {
+    "data_extracao": "2025-12-01T11:18:23.496492",
+    "arquivo_fonte": "Dados - Metas.xlsx",
+    "total_indicadores": 8,
+    "total_alertas": 3,
+    "observacoes": "Dados extraídos baseados na análise das abas: Geral, Atenção a Saúde, Vigilância em Saúde, Gestão"
+  }
+}
