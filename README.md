@@ -51,7 +51,7 @@ Sistema web para monitoramento de indicadores de saúde pública municipal, dese
 
 1. **Clone ou baixe o projeto**
 ```bash
-cd TCC
+cd TCC---Minitoramento-de-Indicadores
 ```
 
 2. **Instale as dependências**
@@ -88,7 +88,7 @@ http://localhost:3000
 ## 📁 Estrutura do Projeto
 
 ```
-TCC/
+TCC---Minitoramento-de-Indicadores/
 ├── src/
 │   ├── components/          # Componentes React
 │   │   ├── Dashboard.jsx    # Dashboard principal
